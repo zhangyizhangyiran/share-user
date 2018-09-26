@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Color_Theme_Main_Background"
+    android:fitsSystemWindows="true"
+    tools:context=".module.mycenter.activity.MyCenterActivity">
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:weightSum="11">
+        <!--标题栏-->
+        <include layout="@layout/include_base_tab_bar"/>
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_weight="5"
+                      android:background="@android:color/white"
+                      android:orientation="vertical">
+
+
+            <!--头像-->
+            <LinearLayout android:id="@+id/activity_mycenter_lin_head"
+                          android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:layout_weight="1.5"
+                          android:background="@color/white"
+                          android:orientation="horizontal"
+                          android:paddingLeft="16dp">
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="match_parent"
+                          android:gravity="center_vertical"
+                          android:text="头像"/>
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:orientation="horizontal"
+                              android:weightSum="9">
+
+                    <RelativeLayout android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="8.5"
+                                    android:gravity="right">
+
+                        <com.soe.sharesoe.module.mycenter.view.CircleImageView
+                            android:id="@+id/activity_mycenter_img_head"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:src="@mipmap/icon_classift"
+                            app:civ_border_color="@android:color/white"
+                            app:civ_border_width="1dp"/>
+
+                    </RelativeLayout>
+
+
+                    <ImageView android:layout_width="wrap_content"
+                               android:layout_height="match_parent"
+                               android:layout_marginLeft="10dp"
+                               android:src="@mipmap/icon_more"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--黑线-->
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="@dimen/dp_16"
+                          android:paddingRight="@dimen/dp_16">
+                <include
+                    layout="@layout/view_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp">
+
+                </include>
+            </LinearLayout>
+
+
+            <!--昵称-->
+            <LinearLayout android:id="@+id/activity_mycenter_lin_nickname"
+                          android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:layout_weight="1"
+                          android:background="@color/white"
+                          android:orientation="horizontal"
+                          android:paddingLeft="16dp">
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="match_parent"
+                          android:gravity="center_vertical"
+                          android:text="昵称"/>
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:orientation="horizontal">
+
+                    <TextView android:id="@+id/activity_my_center_monicker"
+                              android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:layout_marginRight="20dp"
+                              android:drawablePadding="6dp"
+                              android:drawableRight="@mipmap/icon_more"
+                              android:gravity="center|right"
+                              android:text=""/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <!--黑线-->
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="@dimen/dp_16"
+                          android:paddingRight="@dimen/dp_16">
+                <include
+                    layout="@layout/view_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp">
+
+                </include>
+            </LinearLayout>
+
+            <!--姓名-->
+            <LinearLayout android:id="@+id/activity_mycenter_lin_name"
+                          android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:layout_weight="1"
+                          android:background="@color/white"
+                          android:paddingLeft="16dp">
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="match_parent"
+                          android:gravity="center_vertical"
+                          android:text="姓名"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView android:id="@+id/activity_my_center_name"
+                              android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:layout_marginRight="20dp"
+                              android:drawablePadding="6dp"
+                              android:drawableRight="@mipmap/icon_more"
+                              android:gravity="center|right"
+                              android:text=""/>
+                </LinearLayout>
+            </LinearLayout>
+            <!--黑线-->
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="@dimen/dp_16"
+                          android:background="@android:color/white"
+                          android:paddingRight="@dimen/dp_16">
+                <include
+                    layout="@layout/view_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp">
+
+                </include>
+            </LinearLayout>
+
+            <!--性别-->
+            <LinearLayout android:id="@+id/activity_mycenter_lin_sex"
+                          android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:layout_weight="1"
+                          android:background="@color/white"
+                          android:paddingLeft="16dp">
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="match_parent"
+                          android:gravity="center_vertical"
+                          android:text="性别"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView android:id="@+id/activity_my_center_gender"
+                              android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:layout_marginRight="20dp"
+                              android:drawablePadding="6dp"
+                              android:drawableRight="@mipmap/icon_more"
+                              android:gravity="center|right"
+                              android:text=""/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <!--黑线-->
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="@dimen/dp_16"
+                          android:paddingRight="@dimen/dp_16">
+                <include
+                    layout="@layout/view_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp">
+
+                </include>
+            </LinearLayout>
+
+            <!--生日-->
+            <LinearLayout android:id="@+id/activity_mycenter_lin_birthday"
+                          android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:layout_weight="1"
+                          android:background="@color/white"
+                          android:paddingLeft="16dp">
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="match_parent"
+                          android:gravity="center_vertical"
+                          android:text="生日"/>
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:gravity="right">
+
+                    <TextView android:id="@+id/activity_mycenter_tv_birthday"
+                              android:layout_width="wrap_content"
+                              android:layout_height="match_parent"
+                              android:layout_marginRight="20dp"
+                              android:drawablePadding="6dp"
+                              android:drawableRight="@mipmap/icon_more"
+                              android:gravity="center_vertical"
+                              android:text=""/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <!--认证-->
+        <LinearLayout android:id="@+id/activity_mycenter_lin_attestation"
+                      android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_marginTop="10dp"
+                      android:layout_weight="1"
+                      android:background="@android:color/white"
+                      android:orientation="horizontal"
+                      android:paddingLeft="16dp">
+
+            <TextView android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:layout_weight="3"
+                      android:gravity="center_vertical"
+                      android:text="实名认证"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <LinearLayout android:layout_width="0dp"
+                              android:layout_height="match_parent"
+                              android:layout_weight="1.5"
+                              android:gravity="right|center">
+                    <ImageView
+                        android:id="@+id/activity_mycenter_imag_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/icon_v"
+                        android:visibility="invisible"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout android:layout_width="0dp"
+                              android:layout_height="match_parent"
+                              android:layout_weight="2"
+                              android:gravity="center|right">
+
+                    <TextView
+                        android:id="@+id/activity_mycenter_tv_attestation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="20dp"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@mipmap/icon_more"
+                        android:gravity="center|right"
+                        android:text=""
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

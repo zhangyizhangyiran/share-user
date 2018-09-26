@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="300dp"
+                  android:paddingTop="50dp"
+                  android:background="@mipmap/bg"
+                  android:gravity="center_horizontal">
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="3dp"
+                android:src="@mipmap/img"/>
+
+
+            <com.soe.sharesoe.module.mycenter.view.SeekArc
+                android:id="@+id/activity_trustworthiness_seekarc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="8dp"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:paddingTop="8dp"
+                app:startAngle="180"
+                app:arcColor="@android:color/transparent"
+                app:arcWidth="0dp"
+                app:enabled="false"
+                app:progressColors="@android:color/white"
+                app:progressWidth="6dp"
+                app:rotation="180"
+                app:touchInside="true"/>
+
+
+            <RelativeLayout android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+
+
+                <TextView android:id="@+id/activity_trustworthiness_seekarc_data"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginBottom="6dp"
+                          android:gravity="center_horizontal"
+                          android:text="2017-10-27日更新"
+                          android:textColor="@android:color/white"/>
+
+
+                <TextView android:id="@+id/activity_trustworthiness_seekarc_number"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_below="@+id/activity_trustworthiness_seekarc_data"
+                          android:layout_marginBottom="6dp"
+                          android:gravity="center_horizontal"
+                          android:text=""
+                          android:textColor="@android:color/white"
+                          android:textSize="40sp"/>
+
+                <TextView android:id="@+id/activity_trustworthiness_seekarc_rule"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_below="@+id/activity_trustworthiness_seekarc_number"
+                          android:gravity="center_horizontal"
+                          android:text="积分规则 >"
+                          android:textColor="@android:color/white"/>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

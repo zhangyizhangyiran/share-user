@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/item_btn_recharge_money"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/shape_wallet_recharge_bg"
+        android:button="@null"
+        android:gravity="center"
+        android:text="@string/testing"
+        android:textColor="@color/Color_Theme_White"
+        android:textSize="18sp" />
+</LinearLayout>

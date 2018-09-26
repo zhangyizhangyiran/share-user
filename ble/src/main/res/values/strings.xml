@@ -1,0 +1,23 @@
+<resources>
+
+
+    <string name="write.file.failed">Save the log file failed</string>
+
+    <string name="incorrect.mac.address">The mac address must not be null</string>
+
+    <string name="open.bluetooth">please open your bluetooth first</string>
+
+    <string name="find.the.device.connect.successfull">find the device , connect successfull...</string>
+
+    <string name="find.the.device.connect.failed">find the device , connect failed...</string>
+
+    <string name="find.the.device.connect.failed.retry">find the device , connect failed , retry...</string>
+
+    <string name="find.services.successfull">find services successfull</string>
+
+    <string name="find.services.failed">find services failed</string>
+
+    <string name="hand.shake.successfull">hand shake successfull,now get token</string>
+
+
+</resources>

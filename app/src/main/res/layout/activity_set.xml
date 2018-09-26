@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Color_Theme_Main_Background"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.soe.sharesoe.module.mycenter.activity.SetActivity">
+
+    <include layout="@layout/include_base_tab_bar"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:weightSum="11">
+
+        <LinearLayout
+            android:id="@+id/activity_set_lin_binding"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:gravity="center_vertical">
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="16dp"
+                      android:drawableRight="@mipmap/icon_more"
+                      android:gravity="center_vertical"
+                      android:paddingRight="16dp"
+                      android:text="换绑手机"
+                      android:textColor="@color/Color_Theme_Text_Categ"/>
+        </LinearLayout>
+
+        <!--黑线-->
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:background="@android:color/white"
+                      android:paddingLeft="@dimen/dp_16"
+                      android:paddingRight="@dimen/dp_16">
+            <include
+                layout="@layout/view_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp">
+
+            </include>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/activity_set_lin_revise"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:gravity="center_vertical">
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="16dp"
+                      android:drawableRight="@mipmap/icon_more"
+                      android:gravity="center_vertical"
+                      android:paddingRight="16dp"
+                      android:text="修改密码"
+                      android:textColor="@color/Color_Theme_Text_Categ"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/activity_set_lin_clean"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:gravity="center_vertical">
+
+            <TextView android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:layout_marginLeft="16dp"
+                      android:layout_weight="1"
+                      android:gravity="center_vertical"
+                      android:paddingRight="16dp"
+                      android:text="清除缓存"
+                      android:textColor="@color/Color_Theme_Text_Categ"/>
+
+
+            <TextView android:id="@+id/activity_set_cache"
+                      android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:layout_marginLeft="16dp"
+                      android:drawablePadding="6dp"
+                      android:drawableRight="@mipmap/icon_more"
+                      android:gravity="center_vertical"
+                      android:paddingRight="10dp"
+                      android:text=""
+                      android:textColor="@color/Color_Theme_Text_Detail"/>
+        </LinearLayout>
+
+        <TextView android:id="@+id/activity_set_no_login"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:layout_marginTop="40dp"
+                  android:background="@color/Color_Theme_Main_Green"
+                  android:gravity="center"
+                  android:paddingBottom="10dp"
+                  android:paddingLeft="80dp"
+                  android:paddingRight="80dp"
+                  android:paddingTop="10dp"
+                  android:text="退出登录"
+                  android:textColor="@color/Color_Theme_White"
+                  android:textSize="14dp"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

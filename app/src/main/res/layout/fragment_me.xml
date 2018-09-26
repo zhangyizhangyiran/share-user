@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/Color_Theme_Main_Background"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:weightSum="12">
+        <!--标题栏-->
+        <include layout="@layout/include_base_tab_bar"/>
+
+        <!--身份信息部分-->
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_weight="2.5"
+                      android:background="@android:color/white"
+                      android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <!--头像-->
+                <com.soe.sharesoe.module.mycenter.view.CircleImageView
+                    android:id="@+id/fragment_me_img_head"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:src="@mipmap/logo"
+                    app:civ_border_color="#f5f4f4"
+                    app:civ_border_width="1dp"/>
+
+                <ImageView android:id="@+id/fragment_me_img_v"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_alignRight="@+id/fragment_me_img_head"
+                           android:src="@mipmap/icon_v"
+                           android:visibility="invisible"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                <LinearLayout android:id="@+id/fragment_me_lin_state"
+                              android:layout_width="wrap_content"
+                              android:layout_height="match_parent"
+                              android:gravity="center"
+                              android:orientation="vertical"
+                              android:visibility="gone">
+                    <!--用户手机号码-->
+                    <TextView android:id="@+id/textView"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_marginBottom="6dp"
+                              android:layout_marginLeft="6dp"
+                              android:layout_marginRight="10dp"
+                              android:layout_marginTop="10dp"
+                              android:gravity="center"
+                              android:text=""
+                              android:textColor="@color/Color_Theme_Text_Categ"
+                              android:textSize="16sp"/>
+
+                    <TextView android:id="@+id/fragment_me_tv_no_integral"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_marginLeft="6dp"
+                              android:drawableLeft="@mipmap/icon_integral"
+                              android:drawablePadding="6dp"
+                              android:text=""/>
+                </LinearLayout>
+                <TextView android:id="@+id/fragment_me_tv_no_login"
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"
+                          android:layout_marginLeft="6dp"
+                          android:gravity="center_vertical"
+                          android:text="未登录"
+                          android:textColor="@color/Color_Theme_Text_Categ"
+                          android:textSize="18sp"
+                          android:visibility="visible"/>
+
+            </RelativeLayout>
+            <!--用户信息编写-->
+
+            <RelativeLayout android:id="@+id/fragment_me_rela_set"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical">
+                <ImageView android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_alignParentRight="true"
+                           android:layout_marginRight="@dimen/dp_16"
+                           android:src="@mipmap/icon_edit"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        <!--黑线-->
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:background="@android:color/white"
+                      android:paddingLeft="16dp"
+                      android:paddingRight="@dimen/dp_16"
+        >
+            <include
+                layout="@layout/view_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp">
+
+            </include>
+
+        </LinearLayout>
+        <!--收藏夹与已预约-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+            <LinearLayout android:id="@+id/fragment_me_lin_favorites"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="16dp"
+                          android:layout_weight="1"
+                          android:gravity="center_vertical"
+                          android:orientation="vertical">
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:drawableLeft="@mipmap/icon_like_normal"
+                          android:drawablePadding="6dp"
+                          android:gravity="center|center_vertical"
+                          android:text="收藏夹"
+                          android:textColor="@color/Color_Theme_Text_Categ"/>
+
+
+            </LinearLayout>
+            <!--黑线-->
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="16dp"
+                          android:paddingRight="@dimen/dp_16">
+                <include
+                    layout="@layout/view_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp">
+
+                </include>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/fragment_me_lin_appointment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:drawableLeft="@mipmap/icon_oder"
+                          android:drawablePadding="6dp"
+                          android:gravity="center|center_vertical"
+                          android:text="已预约"
+                          android:textColor="@color/Color_Theme_Text_Categ"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--我的订单模块-->
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_marginTop="10dp"
+                      android:layout_weight="2.6"
+                      android:background="@android:color/white"
+                      android:orientation="vertical">
+
+            <LinearLayout android:id="@+id/fragment_me_tv_indent"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginBottom="12dp"
+                          android:layout_marginTop="12dp">
+
+                <TextView android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="16dp"
+                          android:drawableRight="@mipmap/icon_more"
+
+                          android:gravity="center_vertical"
+                          android:paddingRight="16dp"
+                          android:text="我的订单"
+                          android:textColor="@color/Color_Theme_Text_Categ"/>
+
+            </LinearLayout>
+            <!--黑线-->
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="16dp"
+                          android:paddingRight="@dimen/dp_16">
+                <include
+                    layout="@layout/view_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp">
+
+                </include>
+
+            </LinearLayout>
+
+            <!--商品预约状态-->
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:gravity="center"
+                          android:orientation="horizontal">
+
+
+                <LinearLayout android:layout_width="0dp"
+                              android:layout_height="match_parent"
+                              android:layout_weight="1"
+                              android:gravity="center">
+
+
+                    <TextView android:id="@+id/fragment_me_tv_status_madebill"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:drawablePadding="6dp"
+                              android:drawableTop="@mipmap/icon_payment"
+                              android:text="待付押款"
+                              android:textColor="@color/Color_Theme_Text_Label"
+                              android:textSize="13sp"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout android:layout_width="0dp"
+                              android:layout_height="match_parent"
+                              android:layout_weight="1"
+                              android:gravity="center">
+
+                    <TextView android:id="@+id/fragment_me_tv_status_use"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:drawablePadding="6dp"
+                              android:drawableTop="@mipmap/icon_service"
+                              android:text="使用中"
+                              android:textColor="@color/Color_Theme_Text_Label"
+                              android:textSize="13sp"/>
+                </LinearLayout>
+
+
+                <LinearLayout android:layout_width="0dp"
+                              android:layout_height="match_parent"
+                              android:layout_weight="1"
+                              android:gravity="center">
+
+                    <TextView android:id="@+id/fragment_me_tv_status_exchange"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:drawablePadding="6dp"
+                              android:drawableTop="@mipmap/icon_return"
+                              android:text="已退换"
+                              android:textColor="@color/Color_Theme_Text_Label"
+                              android:textSize="13sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!--我的钱包-->
+        <LinearLayout android:id="@+id/fragment_me_tv_money"
+                      android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_marginTop="10dp"
+                      android:layout_weight="1"
+                      android:background="@android:color/white"
+                      android:gravity="center_vertical">
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="16dp"
+                      android:drawableLeft="@mipmap/icon_money"
+                      android:drawablePadding="6dp"
+                      android:drawableRight="@mipmap/icon_more"
+                      android:gravity="center_vertical"
+                      android:paddingRight="16dp"
+                      android:text="我的钱包"
+                      android:textColor="@color/Color_Theme_Text_Categ"/>
+
+        </LinearLayout>
+
+        <!--联系我们-->
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_marginTop="10dp"
+                      android:layout_weight="2"
+                      android:background="@android:color/white"
+                      android:gravity="center_vertical"
+                      android:orientation="vertical">
+
+            <LinearLayout android:id="@+id/fragment_me_lin_contact"
+                          android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:layout_weight="1"
+                          android:gravity="center_vertical">
+                <TextView android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="16dp"
+                          android:drawableLeft="@mipmap/icon_contact"
+                          android:drawablePadding="@dimen/dp_6"
+                          android:drawableRight="@mipmap/icon_more"
+                          android:gravity="center_vertical"
+                          android:paddingRight="16dp"
+                          android:text="联系我们"
+                          android:textColor="@color/Color_Theme_Text_Categ"/>
+            </LinearLayout>
+
+
+            <!--黑线-->
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="16dp"
+                          android:paddingRight="@dimen/dp_16">
+                <include
+                    layout="@layout/view_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp">
+
+                </include>
+
+            </LinearLayout>
+
+
+            <LinearLayout android:id="@+id/fragment_me_lin_help"
+                          android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:layout_weight="1"
+                          android:gravity="center_vertical">
+
+                <TextView android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="16dp"
+                          android:drawableLeft="@mipmap/icon_help"
+                          android:drawablePadding="@dimen/dp_6"
+                          android:drawableRight="@mipmap/icon_more"
+                          android:gravity="center_vertical"
+                          android:paddingRight="16dp"
+                          android:text="帮助中心"
+                          android:textColor="@color/Color_Theme_Text_Categ"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

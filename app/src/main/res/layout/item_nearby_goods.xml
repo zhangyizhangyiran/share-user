@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@color/Color_Theme_White">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/Color_Theme_Line_bg" />
+
+    <RelativeLayout
+        android:id="@+id/ds"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:id="@+id/item_img_nearbygoods_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/item_tv_nearbygoods_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_home_text_bg"
+            android:paddingBottom="3dp"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingTop="3dp"
+            android:singleLine="true"
+            android:text="@string/testing"
+            android:textColor="@color/Color_Theme_White"
+            android:textSize="@dimen/sp_10" />
+
+        <TextView
+            android:id="@+id/item_tv_nearbygoods_reserve"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_home_reserve_text_bg"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/testing"
+            android:textColor="@color/Color_Theme_White"
+            android:textSize="@dimen/sp_14"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@+id/ds"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_tv_nearbygoods_name"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/testing"
+            android:textColor="@color/Color_Theme_Text_Title"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/item_tv_nearbygoods_details"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            android:text="@string/testing"
+            android:textColor="@color/Color_Theme_Text_Detail"
+            android:textSize="@dimen/sp_13" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:text="@string/testing"
+            android:textColor="@color/Color_Theme_Main_Green"
+            android:textSize="@dimen/sp_13"
+            android:visibility="invisible" />
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_tv_nearbygoods_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/testing"
+                android:textColor="@color/Color_Theme_Main_Green"
+                android:textSize="@dimen/sp_13" />
+
+            <TextView
+                android:id="@+id/item_tv_nearbygoods_deposit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="3"
+                android:singleLine="true"
+                android:text="@string/testing"
+                android:textColor="@color/Color_Theme_Text_Descri"
+                android:textSize="@dimen/sp_11" />
+
+            <TextView
+                android:id="@+id/item_tv_nearbygoods_reserveover"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="@string/testing"
+                android:textColor="@color/Color_Theme_Text_Descri"
+
+                android:textSize="@dimen/sp_11"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_tv_nearbygoods_reservego"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/shape_home_reserve_bg"
+        android:gravity="center"
+        android:paddingBottom="6dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="6dp"
+        android:text="@string/testing"
+        android:textColor="@color/Color_Theme_White"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

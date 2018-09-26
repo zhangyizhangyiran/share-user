@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:orientation="horizontal"
+    >
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="5dp"
+        android:layout_weight="1"
+        android:textColor="@color/Color_Theme_Text_Categ"
+        android:gravity="center_vertical"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tvlocation"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:drawableLeft="@mipmap/icon_location"
+        android:drawablePadding="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/Color_Theme_Main_Green"
+        android:text="重新定位" />
+
+</LinearLayout>

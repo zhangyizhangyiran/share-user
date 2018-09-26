@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="52dp"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@+id/pay"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <include layout="@layout/view_horizontal" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="确认付款"
+            android:textColor="@color/Color_Theme_Text_Hint"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="52dp"
+            android:layout_height="match_parent"
+            android:layout_alignRight="@+id/pay"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+
+            android:orientation="horizontal">
+
+            <include layout="@layout/view_horizontal" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pay_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/testing"
+            android:textColor="@color/Color_Theme_Text_Categ"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/pay_info"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="余额不足请充值或者使用其他方式付款"
+            android:textColor="@color/Color_Theme_Main_Red"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/recharge_rdgroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical|right">
+
+        <RadioButton
+            android:id="@+id/recharge_radiobtn3"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/selector_recharge_money_radio_bg"
+            android:button="@null"
+            android:checked="true"
+            android:drawableLeft="@mipmap/icon_pay_balance"
+            android:drawablePadding="@dimen/dp_10"
+            android:gravity="center_vertical"
+            android:paddingLeft="80dp"
+            android:text="余额支付  ¥"
+            android:textColor="@color/Color_Theme_Text_Type"
+            android:textSize="@dimen/sp_14"
+            android:visibility="visible" />
+
+        <RadioButton
+            android:id="@+id/recharge_radiobtn2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/selector_recharge_money_radio_bg"
+            android:button="@null"
+
+            android:drawableLeft="@mipmap/icon_pay_wechat"
+            android:drawablePadding="@dimen/dp_10"
+            android:gravity="center_vertical"
+            android:paddingLeft="80dp"
+            android:text="微信支付"
+            android:textColor="@color/Color_Theme_Text_Type"
+            android:textSize="@dimen/sp_14" />
+
+        <RadioButton
+            android:id="@+id/recharge_radiobtn1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/selector_recharge_money_radio_bg"
+            android:button="@null"
+            android:drawableLeft="@mipmap/icon_pay_zhifubao"
+
+            android:drawablePadding="@dimen/dp_10"
+            android:gravity="center_vertical"
+            android:paddingLeft="80dp"
+            android:text="支付宝支付"
+            android:textColor="@color/Color_Theme_Text_Type"
+            android:textSize="@dimen/sp_14" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_pay"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_btn"
+        android:text="确认付款"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+</LinearLayout>

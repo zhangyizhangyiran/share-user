@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <paths>
+        <!--files-path 对应 Context.getFilesDir()-->
+        <!--cache-path 对应 getCacheDir()-->
+        <!--external-path 对应 Environment.getExternalStorageDirectory()-->
+        <!--external-files-path 对应 Context#getExternalFilesDir(String) Context.getExternalFilesDir(null)-->
+        <!--external-cache-path 对应 Context.getExternalCacheDir()-->
+
+        <files-path
+            name="camera_photos_files-path"
+            path=""
+            />
+
+        <external-path
+            name="camera_photos_external-path"
+            path="" />
+        <cache-path
+            name="camera_photos_cache-path"
+            path="" />
+        <external-files-path
+            name="external-files-path-path"
+            path=""
+            />
+        <external-cache-path
+            name="camera_photos_external-cache-path"
+            path="" />
+        <root-path name="camera_photos_root-path" path="" />
+    </paths>
+</resources>

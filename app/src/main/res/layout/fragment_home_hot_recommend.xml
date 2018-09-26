@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/item_home_recom_titile1" />
+
+    <!--<com.soe.sharesoe.module.home.gridviewpager.DynamicSoreView-->
+    <!--android:id="@+id/hot_recommend_SoreView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="200dp"-->
+    <!--android:background="#ffffff"-->
+    <!--app:SoreDistance="10"-->
+    <!--app:SoreNumber="4" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/hot_recommend_SoreView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:id="@+id/liner_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:background="@color/Color_Theme_Trans"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <include layout="@layout/include_trans_details_topview" />
+</LinearLayout>

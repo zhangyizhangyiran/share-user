@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_base_tab_bar" />
+
+    <include layout="@layout/layout_goods_top_order_status" />
+
+    <include layout="@layout/layout_goods_top_item" />
+
+    <include
+        android:id="@+id/item_appeal_order_btn"
+        layout="@layout/layout_goods_center_item" />
+
+    <include layout="@layout/layout_goods_bottom_rental" />
+
+    <include layout="@layout/layout_line" />
+
+    <include layout="@layout/layout_goods_bottom_order_status" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Color_Theme_Main_Background">
+
+        <TextView
+            android:id="@+id/order_detail_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="订单编号："
+            android:textColor="@color/Color_Theme_Text_Detail"
+            android:textSize="@dimen/sp_12" />
+    </LinearLayout>
+</LinearLayout>
+

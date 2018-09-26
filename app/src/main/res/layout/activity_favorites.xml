@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/Color_Theme_Main_Background"
+    tools:context="com.soe.sharesoe.module.mycenter.activity.FavoritesActivity">
+
+    <include layout="@layout/include_base_tab_bar"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/frg_honm_swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.soe.sharesoe.module.mycenter.order.SlideRecyclerView
+                android:id="@+id/activity_favoites_recy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                android:scrollbars="none"/>
+
+
+        </FrameLayout>
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

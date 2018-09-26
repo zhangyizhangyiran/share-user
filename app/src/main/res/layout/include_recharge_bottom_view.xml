@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/bike_recharge_rdgroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical|right">
+
+        <RadioButton
+            android:id="@+id/act_rb_recharge_radiobtn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:button="@null"
+            android:drawableLeft="@mipmap/icon_pay_wechat"
+            android:drawablePadding="@dimen/dp_10"
+            android:drawableRight="@drawable/selector_radio"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:text="微信支付"
+            android:textColor="@color/Color_Theme_Text_Type"
+            android:textSize="@dimen/sp_14" />
+
+        <RadioButton
+            android:id="@+id/act_rb_recharge_radiobtn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:button="@null"
+            android:checked="true"
+            android:drawableLeft="@mipmap/icon_pay_zhifubao"
+            android:drawablePadding="@dimen/dp_10"
+            android:drawableRight="@drawable/selector_radio"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:text="支付宝支付"
+            android:textColor="@color/Color_Theme_Text_Type"
+            android:textSize="@dimen/sp_14"
+            android:visibility="visible" />
+
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/act_tv_recharge_go"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="68dp"
+            android:layout_marginRight="68dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shape_wallet_recharge_bg"
+            android:gravity="center"
+            android:text="去充值"
+            android:textColor="@color/Color_Theme_White"
+            android:textSize="@dimen/sp_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="点击去充值，即表示您已经同意"
+                android:textColor="@color/Color_Theme_Text_Hint"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/act_tv_recharge_protocol"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="《充值协议》"
+                android:textColor="@color/Color_Theme_Main_Green"
+                android:textSize="@dimen/sp_12" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/blank"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@color/Color_Theme_Main_Background"
+        android:gravity="center_vertical"
+        android:text="商品类型"
+        android:paddingLeft="@dimen/dp_3"
+        android:textColor="@color/Color_Theme_Text_Label"
+        android:textSize="@dimen/sp_14"/>
+
+    <com.soe.sharesoe.module.sort.category.GridViewForScrollView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3" />
+
+
+</LinearLayout>

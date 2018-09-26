@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:jp="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <com.soe.sharesoe.module.main.NoScrollViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50.5dp" />
+
+
+    <include layout="@layout/view_horizontal" />
+
+    <com.jpeng.jptabbar.JPTabBar
+        android:id="@+id/tabbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        jp:BadgeTextSize="8dp"
+        jp:TabAnimate="Scale"
+        jp:TabIconSize="20dp"
+        jp:TabMargin="6dp"
+        jp:TabMiddleBottomDis="10dp"
+        jp:TabMiddleView="@layout/view_mitem"
+        jp:TabTextSize="12sp" />
+</RelativeLayout>

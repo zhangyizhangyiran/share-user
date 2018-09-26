@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_base_tab_bar" />
+
+    <include layout="@layout/include_search_add" />
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/act_search_add_swiperefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Color_Theme_Main_Background">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/act_search_add_recycleview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+
+            <com.soe.sharesoe.widget.CustomEmptyView
+                android:id="@+id/act_search_add_emptylayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" />
+
+        </FrameLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

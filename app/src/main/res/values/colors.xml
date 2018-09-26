@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="Color_Theme_White">#FFFFFFFF</color>
+    <color name="Color_Theme_Trans">#00000000</color>
+    <color name="Color_Theme_Main_Background">#FFF5F5F5</color>
+    <color name="Color_Theme_Main_Green">#FF04D9C8</color>
+    <color name="Color_Theme_Main_Green_Bg">#4004D9C8</color>
+    <color name="Color_Theme_Main_Green_Bg_Recharge">#1A04D9C8</color>
+    <color name="Color_Theme_Main_Green_Home_Sort">#FFB8E986</color>
+    <color name="Color_Theme_Main_Red">#FFFA7567</color>
+    <color name="Color_Theme_Main_Red_Bg">#B3FF5031</color>
+    <color name="Color_Theme_Main_Blue">#FF4A90E2</color>
+    <color name="Color_Theme_Text_Label">#FF515151</color>
+    <color name="Color_Theme_Text_Categ">#FF2A2A2A</color>
+    <color name="Color_Theme_Text_Title">#FF3C3C3C</color>
+    <color name="Color_Theme_Text_Type">#FF7D7D7D</color>
+    <color name="Color_Theme_Text_Detail">#FF959595</color>
+    <color name="Color_Theme_Text_Descri">#FF9B9B9B</color>
+    <color name="Color_Theme_Text_Hint">#FFAEAEAE</color>
+    <color name="Color_Theme_Indicator">#99AEAEAE</color>
+    <color name="Color_Theme_Button_Gray">#FFE4E4E4</color>
+    <color name="Color_Theme_Line_bg">#FFE7E2E1</color>
+    <color name="Color_Theme_Line_Separ">#FFF1F1F1</color>
+    <color name="Color_Theme_Text_Reserve_Bg">#E6492824</color>
+    <color name="goods_detail_order_bg">#FFD166</color>
+    <color name="goods_detail_order_pressed_bg">#D4A12B</color>
+    <color name="goods_detail_bg">#FAFAFA</color>
+    <color name="progress_gray">#FFD8D8D8</color>
+    <color name="default_blue_light">#ff33b5e5</color>
+    <color name="sort_bg_text">#FFFAFAF9</color>
+    <color name="toast_bg">#CC545454</color>
+
+
+
+    <!--分类中颜色-->
+    <color name="sort_color_1">#FA7567</color>
+    <color name="sort_color_2">#FFD166</color>
+    <color name="sort_color_3">#B8E986</color>
+    <color name="sort_color_4">#0E6E8E</color>
+    <color name="sort_color_5">#EF476F</color>
+    <color name="sort_color_6">#86A7E9</color>
+    <color name="sort_color_7">#A789F9</color>
+    <color name="sort_color_8">#CCB098</color>
+    <color name="sort_color_9">#86DEE9</color>
+
+</resources>

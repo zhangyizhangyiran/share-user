@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/Color_Theme_White"
+    android:gravity="end"
+    android:id="@+id/bottom_goods_order_lly"
+    android:visibility="gone"
+    android:orientation="horizontal"
+    android:padding="@dimen/dp_10">
+
+
+    <Button
+        android:id="@+id/bottom_goods_order_btn1"
+        android:layout_width="70dp"
+        android:layout_height="26dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/dp_10"
+        android:background="@drawable/selector_circle_btn2"
+        android:text="取消预约"
+        android:visibility="gone"
+        android:textColor="@color/Color_Theme_Text_Detail"
+        android:textSize="@dimen/sp_12" />
+
+    <Button
+        android:id="@+id/bottom_goods_order_btn2"
+        android:layout_width="70dp"
+        android:layout_height="26dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/dp_10"
+        android:visibility="gone"
+        android:background="@drawable/selector_circle_btn2"
+        android:text="申诉订单"
+
+        android:textColor="@color/Color_Theme_Text_Detail"
+        android:textSize="@dimen/sp_12" />
+
+    <Button
+        android:id="@+id/bottom_goods_order_btn3"
+        android:layout_width="70dp"
+        android:layout_height="26dp"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/selector_circle_btn"
+        android:text="去付款"
+        android:visibility="gone"
+        android:textColor="@color/Color_Theme_Main_Red"
+        android:textSize="@dimen/sp_12" />
+
+
+</LinearLayout>

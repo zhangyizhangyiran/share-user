@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".module.mycenter.activity.AutonymActivity">
+
+    <include layout="@layout/include_base_tab_bar"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="30dp"
+        android:id="@+id/activity_Autonym_phone_textinp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        app:counterOverflowTextAppearance="@style/counterOverflowTextAppearance"
+        app:errorTextAppearance="@style/errorAppearance"
+        app:hintAnimationEnabled="true"
+        app:hintEnabled="true"
+        app:hintTextAppearance="@style/hintAppearance"
+        app:theme="@style/TextInputLayoutLineColor">
+
+        <com.soe.sharesoe.module.member.edittext.AutoCheckEditText
+            android:id="@+id/activity_Autonym_phone_auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@mipmap/icon_clear"
+            android:drawablePadding="10dp"
+            android:hint="姓名"
+            android:singleLine="true"
+            android:textSize="14sp"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="0dp"
+
+        app:counterOverflowTextAppearance="@style/counterOverflowTextAppearance"
+        app:errorTextAppearance="@style/errorAppearance"
+        app:hintAnimationEnabled="true"
+        app:hintEnabled="true"
+        app:hintTextAppearance="@style/hintAppearance"
+        app:theme="@style/TextInputLayoutLineColor">
+
+        <com.soe.sharesoe.module.member.edittext.AutoCheckEditText
+            android:id="@+id/activity_autonym_auto_identity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@mipmap/icon_clear"
+            android:hint="身份证号码"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:textSize="14sp"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView android:id="@+id/activity_autonym_tv_login"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:layout_marginLeft="40dp"
+              android:layout_marginRight="40dp"
+              android:layout_marginTop="20dp"
+              android:background="@drawable/shape_no_login"
+              android:enabled="true"
+              android:gravity="center"
+              android:text="去认证"
+              android:textColor="@android:color/white"/>
+
+</LinearLayout>

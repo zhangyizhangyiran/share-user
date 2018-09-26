@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/bottom_goods_deposit_rl"
+    android:background="@color/Color_Theme_White"
+    android:gravity="end|center_vertical"
+    android:paddingTop="@dimen/dp_10"
+    android:paddingBottom="@dimen/dp_10"
+    android:paddingLeft="@dimen/dp_20"
+    android:paddingRight="@dimen/dp_20"
+    android:visibility="gone"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/bottom_goods_deposit_real"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="押金：*"
+        android:visibility="gone"
+        android:textColor="@color/Color_Theme_Text_Hint"
+        android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:id="@+id/bottom_goods_rental_real"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/bottom_goods_deposit_real"
+        android:layout_alignLeft="@+id/bottom_goods_deposit_real"
+        android:text="租金：*"
+        android:visibility="gone"
+        android:textColor="@color/Color_Theme_Text_Hint"
+        android:textSize="@dimen/sp_14" />
+</RelativeLayout>

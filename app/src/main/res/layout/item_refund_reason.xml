@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:id="@+id/item_radio_group"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:gravity="center_vertical|right">-->
+
+<RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_radio_btn"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/selector_recharge_money_radio_bg"
+    android:button="@null"
+    android:checked="true"
+    android:drawablePadding="@dimen/dp_10"
+    android:drawableRight="@drawable/selector_radio"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/dp_20"
+    android:paddingRight="@dimen/dp_20"
+    android:text="余额支付  ¥156.00"
+    android:textColor="@color/Color_Theme_Text_Categ"
+    android:textSize="@dimen/sp_14"
+    android:visibility="visible" />
+
+
+    <!--</RadioGroup>-->
+

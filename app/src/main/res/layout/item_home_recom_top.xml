@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@drawable/shape_home_recom_fram"
+    android:orientation="horizontal">
+    <!--android:background="@drawable/shape_home_recom_fram"-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_hot_recommend_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="手机数码"
+            android:textColor="@color/Color_Theme_Text_Categ"
+            android:textSize="@dimen/sp_15" />
+
+        <TextView
+            android:id="@+id/item_hot_recommend_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:text="副标题副标题"
+            android:textColor="@color/Color_Theme_Main_Green"
+            android:textSize="@dimen/sp_13" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/item_hot_recommend_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/logo" />
+</LinearLayout>

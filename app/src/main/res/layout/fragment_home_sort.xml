@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <!--<com.soe.sharesoe.module.home.gridviewpager.DynamicSoreView-->
+        <!--android:id="@+id/dynamicSoreView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="196dp"-->
+        <!--android:background="#ffffff"-->
+        <!--app:SoreDistance="10"-->
+        <!--app:SoreNumber="8" />-->
+
+    <!--<include layout="@layout/include_trans_details_topview" />-->
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/dynamicSoreView"
+        android:layout_width="match_parent"
+        android:layout_height="196dp"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:id="@+id/liner_indicator1"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        />
+    <include layout="@layout/include_trans_details_topview" />
+    <!--<com.viewpagerindicator.LinePageIndicator-->
+        <!--android:id="@+id/indicator"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="10dp"-->
+        <!--android:background="@color/white"-->
+        <!--android:padding="5dip" />-->
+
+</LinearLayout>

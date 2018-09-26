@@ -1,0 +1,21 @@
+<resources>
+
+
+    <string name="write.file.failed">日志文件保存失败</string>
+
+    <string name="incorrect.mac.address">蓝牙的mac地址不能为空</string>
+
+    <string name="open.bluetooth">请先打开你的蓝牙</string>
+
+    <string name="find.the.device.connect.successfull">找到设备,连接成功...</string>
+
+    <string name="find.the.device.connect.failed">找到设备,连接失败...</string>
+
+    <string name="find.the.device.connect.failed.retry">找到设备,连接失败,重新连接...</string>
+
+    <string name="find.services.successfull">查找services成功</string>
+
+    <string name="find.services.failed">查找services失败</string>
+
+    <string name="hand.shake.successfull">握手成功,开始获取token</string>
+</resources>

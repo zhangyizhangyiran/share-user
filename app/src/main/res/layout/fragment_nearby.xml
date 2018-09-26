@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flipboard.bottomsheet.BottomSheetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottomsheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/fra_mv_nearby_mapView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/fra_tv_nearby_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/shape_oval_userlocation_textbg"
+            android:drawableLeft="@mipmap/icon_localize"
+            android:drawablePadding="7dp"
+            android:padding="10dp"
+            android:text="定位中"
+            android:textColor="@color/Color_Theme_Main_Green"
+            android:textSize="@dimen/sp_16" />
+
+        <ImageView
+            android:id="@+id/fra_img_go_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="5dp"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/icon_map_localize" />
+    </RelativeLayout>
+
+</com.flipboard.bottomsheet.BottomSheetLayout>

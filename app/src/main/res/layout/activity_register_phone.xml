@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.soe.sharesoe.module.member.activity.RegisterPhoneActivity">
+
+    <include layout="@layout/include_base_tab_bar"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="160dp"
+                  android:orientation="vertical">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/activity_register_phone_textinp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            app:counterOverflowTextAppearance="@style/counterOverflowTextAppearance"
+            app:errorTextAppearance="@style/errorAppearance"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true"
+            app:hintTextAppearance="@style/hintAppearance"
+            app:passwordToggleTint="#b3b0b0"
+            app:theme="@style/TextInputLayoutLineColor">
+
+            <com.soe.sharesoe.module.member.edittext.AutoCheckEditText
+                android:id="@+id/activity_register_phone_auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@mipmap/icon_clear"
+                android:drawablePadding="10dp"
+                android:drawableStart="@mipmap/phone"
+                android:hint="手机号"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:textSize="14sp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="40dp"
+                      android:layout_marginRight="40dp"
+                      android:layout_marginTop="10dp">
+
+            <ImageView android:id="@+id/activity_register_phone_imag"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center_vertical"
+                       android:layout_marginRight="3dp"
+                       android:src="@mipmap/icon_radio_selected"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="已阅读并同意"
+                      android:textColor="@color/Color_Theme_Text_Hint"/>
+
+            <TextView android:id="@+id/activity_register_phone_tv_service"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="6dp"
+                      android:text="《万享服务条款》"
+                      android:textColor="#0bd983"/>
+
+        </LinearLayout>
+
+        <TextView android:id="@+id/activity_register_phone_tv_login"
+                  android:layout_width="match_parent"
+                  android:layout_height="40dp"
+                  android:layout_marginLeft="40dp"
+                  android:layout_marginRight="40dp"
+                  android:layout_marginTop="20dp"
+                  android:background="@drawable/shape_no_login"
+                  android:enabled="false"
+                  android:gravity="center"
+                  android:text="下一步"
+                  android:textColor="#cac9c9"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lly"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_centerInParent="true"
+    android:orientation="vertical">
+
+    <com.soe.sharesoe.module.mycenter.view.CircleImageView
+        android:id="@+id/iv"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        android:src="@color/sort_color_1" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Name"
+        android:textColor="@color/Color_Theme_White"
+        android:textSize="@dimen/sp_14"
+         />
+
+</FrameLayout>

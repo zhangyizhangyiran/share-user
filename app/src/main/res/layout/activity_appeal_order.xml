@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.soe.sharesoe.module.mycenter.order.AppealOrderActivity">
+
+    <include layout="@layout/include_base_tab_bar" />
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8.8"
+            android:background="@color/Color_Theme_Main_Background"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_10"
+                android:background="@color/Color_Theme_Main_Background" />
+
+            <include layout="@layout/layout_goods_top_item" />
+
+            <include layout="@layout/layout_goods_center_item" />
+
+            <include layout="@layout/layout_goods_bottom_rental" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_current_goods"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/Color_Theme_White"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_20"
+                android:paddingRight="@dimen/dp_20">
+
+                <TextView
+                    android:id="@+id/tv_current_goods"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="租金说明"
+                    android:textColor="@color/Color_Theme_Text_Label"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawablePadding="@dimen/dp_10"
+                    android:drawableRight="@mipmap/right_img"
+                    android:gravity="center_vertical|end"
+                    android:text="商品所在位置"
+                    android:textColor="@color/Color_Theme_Text_Categ"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Color_Theme_White"
+                android:minHeight="30dp"
+                android:paddingBottom="@dimen/dp_10"
+                android:paddingLeft="@dimen/dp_20"
+                android:paddingRight="@dimen/dp_20"
+                android:paddingTop="@dimen/dp_10"
+                android:text="租金说明"
+                android:textColor="@color/Color_Theme_Text_Label"
+                android:textSize="@dimen/sp_12" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_10"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/report_stop_bike_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5.8"
+                    android:background="@drawable/shape_layout_circle_editbg"
+                    android:gravity="start"
+                    android:hint="请输入补充描述"
+                    android:inputType="textMultiLine"
+                    android:maxLength="140"
+                    android:padding="@dimen/dp_10"
+                    android:paddingLeft="@dimen/dp_20"
+                    android:textSize="@dimen/sp_12" />
+
+                <TextView
+                    android:id="@+id/report_stop_bike_hint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:gravity="right"
+                    android:text="0/140" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/appeal_order_ry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:overScrollMode="never" />
+
+<!--
+            <ImageView
+                android:id="@+id/report_stop_bike_photo"
+                android:layout_width="@dimen/dp_70"
+                android:layout_height="@dimen/dp_70"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:scaleType="center"
+                android:background="@drawable/selector_circle_bg"
+                android:src="@mipmap/icon_photo" />
+-->
+
+            <LinearLayout
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/report_stop_bike_confirm"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_40"
+                    android:background="@drawable/selector_btn"
+                    android:clickable="false"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:text="提交"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sp_16" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

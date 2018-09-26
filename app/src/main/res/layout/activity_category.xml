@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_base_tab_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Color_Theme_Main_Background"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/lv_menu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/Color_Theme_White"
+            android:divider="@color/Color_Theme_Line_bg"
+            android:dividerHeight="1px"
+            android:scrollbars="none"
+            android:fadeScrollbars="false"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_weight="3"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:id="@+id/lv_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@color/Color_Theme_Line_bg"
+                    android:dividerHeight="0px"
+                    android:fadeScrollbars="false"
+                    android:scrollbars="none" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_titile"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/Color_Theme_Main_Background"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_3"
+                android:scrollbars="none"
+                android:fadeScrollbars="false"
+                android:text="商品类型"
+                android:visibility="gone"
+                android:textColor="@color/Color_Theme_Text_Label"
+                android:textSize="@dimen/sp_14" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

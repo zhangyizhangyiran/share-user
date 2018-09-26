@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:weightSum="11">
+
+    <include layout="@layout/include_base_tab_bar"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_marginLeft="40dp"
+                  android:layout_marginRight="40dp"
+                  android:orientation="vertical">
+        <!--图片-->
+        <ImageView android:layout_width="200dp"
+                   android:layout_height="100dp"
+                   android:layout_gravity="center"
+                   android:layout_marginTop="30dp"
+                   android:src="@mipmap/logo"/>
+
+        <!--手机号-->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/activity_member_textinp_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:counterOverflowTextAppearance="@style/counterOverflowTextAppearance"
+            app:errorTextAppearance="@style/errorAppearance"
+            app:hintTextAppearance="@style/hintAppearance"
+            app:theme="@style/TextInputLayoutLineColor">
+
+            <com.soe.sharesoe.module.member.edittext.AutoCheckEditText
+                android:id="@+id/activity_member_auto_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@mipmap/icon_clear"
+                android:drawablePadding="8dp"
+                android:drawableStart="@mipmap/phone"
+                android:hint="手机号"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:paddingRight="16dp"
+                android:singleLine="true"
+                android:textColorHint="@color/Color_Theme_Text_Hint"
+                android:textSize="16sp"/>
+
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <!--密码-->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/activity_member_textinp_passworld"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:counterOverflowTextAppearance="@style/counterOverflowTextAppearance"
+            app:errorTextAppearance="@style/errorAppearance"
+            app:hintTextAppearance="@style/hintAppearance"
+            app:passwordToggleDrawable="@mipmap/icon_hid"
+            app:passwordToggleEnabled="true"
+            app:theme="@style/TextInputLayoutLineColor">
+
+            <com.soe.sharesoe.module.member.edittext.AutoCheckEditText
+                android:id="@+id/activity_member_auto_passworld"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:drawableStart="@mipmap/key"
+                android:hint="密码"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColorHint="@color/Color_Theme_Text_Hint"
+                android:textSize="16sp"/>
+
+
+        </android.support.design.widget.TextInputLayout>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="10dp"
+                      android:orientation="horizontal">
+            <ImageView android:id="@+id/activity_member_imag_lead"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginRight="3dp"
+                       android:layout_gravity="center_vertical"
+                       android:src="@mipmap/icon_radio_selected"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="已阅读并同意"
+                      android:textColor="@color/Color_Theme_Text_Hint"/>
+
+            <TextView android:id="@+id/activity_member_tv_lead"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="6dp"
+                      android:text="《万享服务条款》"
+                      android:textColor="@color/Color_Theme_Main_Green"/>
+
+        </LinearLayout>
+        <!--登录按钮-->
+        <TextView android:id="@+id/activity_member_tv_login"
+                  android:layout_width="match_parent"
+                  android:layout_height="50dp"
+                  android:layout_marginTop="20dp"
+                  android:background="@drawable/shape_no_login"
+                  android:enabled="false"
+                  android:gravity="center"
+                  android:text="登录"
+                  android:textColor="@color/Color_Theme_White"/>
+
+        <!--注册登录-->
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="18dp"
+                      android:gravity="center"
+                      android:orientation="horizontal">
+
+            <TextView android:id="@+id/activity_member_tv_register"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_marginRight="20dp"
+                      android:layout_weight="1"
+                      android:drawablePadding="6dp"
+                      android:drawableRight="@mipmap/icon_more"
+                      android:gravity="right"
+                      android:text="立即注册"
+                      android:textColor="@color/Color_Theme_Text_Type"/>
+
+            <include layout="@layout/view_vertical"></include>
+
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1">
+
+                <TextView android:id="@+id/activity_member_tv_forget"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="10dp"
+                          android:drawablePadding="6dp"
+                          android:drawableRight="@mipmap/icon_more"
+                          android:gravity="left"
+                          android:text="忘记密码"
+                          android:textColor="@color/Color_Theme_Text_Type"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+
+
+

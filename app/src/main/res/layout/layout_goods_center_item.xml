@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@color/goods_detail_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/dp_20"
+    android:paddingRight="@dimen/dp_20">
+
+    <ImageView
+        android:id="@+id/center_goods_img"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_default_logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:layout_toEndOf="@+id/center_goods_img"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp_10">
+
+        <LinearLayout
+            android:id="@+id/lly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/center_goods_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="商品名称"
+                android:textColor="@color/Color_Theme_Text_Title"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:id="@+id/center_goods_num"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:maxLines="1"
+                android:text="× 1"
+                android:textColor="@color/Color_Theme_Text_Type"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <!--两种方法
+            TextView tv=(TextView)findViewById(R.id.tv);
+            String str="默认颜色<font color='#FF0000'><small>红颜色</small></font>";
+            tv.setTextSize(18); tv.setText(Html.fromHtml(str));
+
+            SpannableString spannableString = new SpannableString("默认颜色红颜色");
+            spannableString.setSpan(new ForegroundColorSpan(Color.parseColor("#FF0000")), 4,spannableString.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+            tv.setText(spannableString);
+            -->
+            <!--<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="使用天数："
+                android:textColor="@color/Color_Theme_Text_Label"
+                android:textSize="13sp" />-->
+
+            <TextView
+                android:id="@+id/center_goods_use_days"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="***"
+                android:textColor="@color/Color_Theme_Main_Red"
+                android:textSize="@dimen/sp_13"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/center_goods_distance"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:gravity="end"
+                android:maxLines="1"
+                android:text=" 500m"
+                android:textColor="@color/Color_Theme_Text_Type"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lly2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/center_goods_rental"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="租金"
+                    android:textColor="@color/Color_Theme_Text_Descri"
+                    android:textSize="@dimen/sp_12" />
+
+                <TextView
+                    android:id="@+id/center_goods_rental_info"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="end"
+                    android:maxLines="1"
+                    android:text="租金说明"
+                    android:textColor="@color/Color_Theme_Main_Blue"
+                    android:textSize="@dimen/sp_12"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/center_goods_deposit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="押金"
+                android:textColor="@color/Color_Theme_Text_Descri"
+                android:textSize="@dimen/sp_12" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
